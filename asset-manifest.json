@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/ReactPractice_Widgets-WikipediaAPI/static/js/main.257e7c2e.chunk.js",
+    "main.js.map": "/ReactPractice_Widgets-WikipediaAPI/static/js/main.257e7c2e.chunk.js.map",
+    "runtime-main.js": "/ReactPractice_Widgets-WikipediaAPI/static/js/runtime-main.c9c7a5c3.js",
+    "runtime-main.js.map": "/ReactPractice_Widgets-WikipediaAPI/static/js/runtime-main.c9c7a5c3.js.map",
+    "static/css/2.b1eb0e80.chunk.css": "/ReactPractice_Widgets-WikipediaAPI/static/css/2.b1eb0e80.chunk.css",
+    "static/js/2.5ec85d1d.chunk.js": "/ReactPractice_Widgets-WikipediaAPI/static/js/2.5ec85d1d.chunk.js",
+    "static/js/2.5ec85d1d.chunk.js.map": "/ReactPractice_Widgets-WikipediaAPI/static/js/2.5ec85d1d.chunk.js.map",
+    "index.html": "/ReactPractice_Widgets-WikipediaAPI/index.html",
+    "precache-manifest.78491f792b1fc142ecd3a5360f6ff9d2.js": "/ReactPractice_Widgets-WikipediaAPI/precache-manifest.78491f792b1fc142ecd3a5360f6ff9d2.js",
+    "service-worker.js": "/ReactPractice_Widgets-WikipediaAPI/service-worker.js",
+    "static/css/2.b1eb0e80.chunk.css.map": "/ReactPractice_Widgets-WikipediaAPI/static/css/2.b1eb0e80.chunk.css.map",
+    "static/js/2.5ec85d1d.chunk.js.LICENSE.txt": "/ReactPractice_Widgets-WikipediaAPI/static/js/2.5ec85d1d.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/ReactPractice_Widgets-WikipediaAPI/static/media/outline-icons.ef60a4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c9c7a5c3.js",
+    "static/css/2.b1eb0e80.chunk.css",
+    "static/js/2.5ec85d1d.chunk.js",
+    "static/js/main.257e7c2e.chunk.js"
+  ]
+}
