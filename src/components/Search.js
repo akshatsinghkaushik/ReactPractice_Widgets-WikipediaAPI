@@ -3,24 +3,36 @@ import React, { useState, useEffect } from 'react';
 import wikipedia from '../apis/wikipedia';
 
 const Search = () => {
+  //Instialize an a search term State with the default value 'programming'
   const [term, setTerm] = useState('programming');
+  //Instialize a State variable storing the debounced search term which will be used to execute the Wikipedia search with the default value as term state (i.e. 'programming')
+  const [debouncedTerm, setDebouncedTerm] = useState(term);
+  //Instialize a results State as an empty array which stores the search results from the Wikipedia API
   const [results, setResults] = useState([]);
 
+  //Only update the search term (debouncedTerm) that is used to execute the Wikipedia search if nothing is typed for one second
+  useEffect(() => {
+    const timerID = setTimeout(() => {
+      setDebouncedTerm(term);
+    }, 1000);
+
+    return () => {
+      clearTimeout(timerID);
+    };
+  }, [term]);
+
+  //Execute the Wikipedia search whenever debouncedTerm is updated (and when the app first loads using the default value)
   useEffect(() => {
     const search = async () => {
       const { data } = await wikipedia.get('', {
         params: {
-          srsearch: term,
+          srsearch: debouncedTerm,
         },
       });
-
       setResults(data.query.search);
     };
-
-    if (term) {
-      search();
-    }
-  }, [term]);
+    search();
+  }, [debouncedTerm]);
 
   const renderedResults = results.map((result) => {
     return (
